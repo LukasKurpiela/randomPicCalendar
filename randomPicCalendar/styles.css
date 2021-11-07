@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn-createCalendar {
+  background-color: green;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin: 15px auto;
+  display: block;
+  width: 12rem;
+  height: 2.5rem;
+}
+
+.btn-shuffleNumbers {
+  background-color: blue;
+  color: white;
+  border: 2px solid green;
+  border-radius: 10px;
+  margin: 15px auto;
+  display: block;
+  width: 12rem;
+  height: 2.5rem;
+}
+
+.container {
+  width: 50rem;
+  height: 55rem;
+  border: 5px solid grey;
+  margin: 15px auto;
+  background-image: url('./pictures/background.jpeg');
+  background-size: cover;
+  box-shadow: 5px 5px 15px grey;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'window2 window10 window7'
+    'window8 window1 window12'
+    'window5 window11 window9'
+    'window6 window3 window4';
+}
+
+.image {
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 8px;
+  border: 1px solid grey;
+  transition: opacity 2s;
+}
