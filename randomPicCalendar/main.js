@@ -7,7 +7,7 @@ const calendarDays = 12;
 const openWindow = (path, event) => {
   event.target.parentNode.style.backgroundImage = `url(${path})`;
   event.target.style.opacity = '0';
-  event.target.style.backgroundColor = '';
+  event.target.style.backgroundColor = 'orange';
 };
 
 const createCalendar = () => {
